@@ -1,6 +1,8 @@
 flask
+gunicorn
 ultralytics
 opencv-python
 easyocr
 numpy
 torch
+
