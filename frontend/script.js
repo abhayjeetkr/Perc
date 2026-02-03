@@ -34,7 +34,7 @@ function captureFrame() {
         let formData = new FormData();
         formData.append("frame", blob, "frame.jpg");
 
-        fetch("http://localhost:5000/detect", {
+        fetch("https://perc-kfnw.onrender.com", {
             method: "POST",
             body: formData
         })
@@ -118,3 +118,4 @@ function playBeep() {
     oscillator.start();
     oscillator.stop(audioCtx.currentTime + 0.15);
 }
+
